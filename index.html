@@ -19,23 +19,58 @@ TemplateMo 547 Real Dynamic
 https://templatemo.com/tm-547-real-dynamic
 
 -->
+<style>
+    /* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
 </head>
+
+<script>
+    // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var op = document.getElementById("op");
+
+// Get the offset position of the op
+var sticky = op.offsetTop;
+
+// Add the sticky class to the op when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    op.classList.add("sticky")
+  } else {
+    op.classList.remove("sticky");
+  }
+}
+</script>
 
 <body>
     <div class="tm-container">
-        <div class="tm-site-header"></div> <!-- tm-site-header -->
         <div class="tm-site-header-overlay">
-            <div class="tm-header-stripe ml-auto"></div>
-            <div class="tm-header-stripe tm-header-stripe-short ml-auto"></div>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-4 tm-site-header-left">
                         <h1 class="text-uppercase tm-site-name">Real Dynamic</h1>
-                        <p class="text-white mb-0 tm-site-desc">New Fluid HTML Template</p>
+                        <!--<p class="text-white mb-0 tm-site-desc">New Fluid HTML Template</p>-->
                     </div>
-                    <div class="col-lg-8 tm-site-header-right">
+                    <div class="col-lg-8 tm-site-heder-right">
                         <!--Navbar-->
-                        <nav class="navbar navbar-expand-lg">
+                        <nav id = "op" class="navbar navbar-expand-lg">
                             <!-- Collapse button -->
                             <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
                                 data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -67,7 +102,6 @@ https://templatemo.com/tm-547-real-dynamic
                 </div> <!-- row -->
             </div> <!-- container fluid -->
         </div> <!-- tm-site-header-overlay -->
-        <div class="tm-header-stripe w-100"></div>
     </div>
     <div class="tm-container">
         <div class="parallax-window" data-parallax="scroll" data-image-src="img/real-dynamic-banner-01.jpg">
@@ -75,7 +109,6 @@ https://templatemo.com/tm-547-real-dynamic
     </div>
 
     <div class="tm-container bg-white">
-        <div class="tm-header-stripe w-100"></div>
         <div class="container-fluid">
             <!--Intro-->
             <section class="row tm-mb-1">
