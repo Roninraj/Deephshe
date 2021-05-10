@@ -19,45 +19,9 @@ TemplateMo 547 Real Dynamic
 https://templatemo.com/tm-547-real-dynamic
 
 -->
-<style>
-    /* Page content */
-.content {
-  padding: 16px;
-}
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-</style>
 </head>
 
-<script>
-    // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the navbar
-var op = document.getElementById("op");
-
-// Get the offset position of the op
-var sticky = op.offsetTop;
-
-// Add the sticky class to the op when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    op.classList.add("sticky")
-  } else {
-    op.classList.remove("sticky");
-  }
-}
-</script>
 
 <body>
     <div id = "op" class="tm-container">
