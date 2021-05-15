@@ -8,7 +8,7 @@ https://templatemo.com/tm-547-real-dynamic
 
     COLOR
     Gray: #474849 - Menu highlight color
-    Light gray: #656667  - Background overlay color
+    Dark Turquoise: #555555  - Background overlay color
     Blue: #06C - Heading color
     Gray: #ABC - ICON color
     Green: #399 - Green button color
@@ -58,7 +58,7 @@ ul { line-height: 2; }
 
 .tm-site-header-overlay {
     color: white;
-    background-color: #656667;    
+    background-color: #555555;    
     padding-top: 20px; 
 }
 
@@ -670,7 +670,7 @@ select:not([multiple]) {
 
     .navbar-toggler {
         margin-left: auto;
-        background-color: #656667;
+        background-color: #555555;
         border-radius: 0;
     }
 
@@ -689,7 +689,7 @@ select:not([multiple]) {
     }
 
     .tm-nav ul {
-        background-color: #656667;
+        background-color: #555555;
         padding-left: 12px;  
         padding-right: 12px;      
     }
