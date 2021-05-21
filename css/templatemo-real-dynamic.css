@@ -59,7 +59,7 @@ ul { line-height: 2; }
 .tm-site-header-overlay {
     color: white;
     background-color: #555555;    
-    padding-top: 20px; 
+    padding-top: 0px; 
 }
 
 .tm-header-stripe {
